@@ -1,0 +1,28 @@
+/*-- scss:defaults --*/
+
+$body-bg: #FDFBF7;
+$body-color: #2B2B2B;
+$link-color: #0B6E99;
+$navbar-bg: #1F3A4D;
+$navbar-fg: #FDFBF7;
+$headings-font-weight: 600;
+
+/*-- scss:rules --*/
+
+h1, h2, h3, h4 {
+  color: #1F3A4D;
+}
+
+h2 {
+  border-bottom: 2px solid #E8DFD3;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+
+body {
+  line-height: 1.65;
+}
+
+.quarto-title-banner {
+  background-color: #1F3A4D;
+}
