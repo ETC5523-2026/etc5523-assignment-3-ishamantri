@@ -17,5 +17,7 @@ format:
       - styles.scss
     toc: true
 
+bibliography: references.bib
+
 
 

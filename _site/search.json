@@ -7,17 +7,45 @@
     "text": "I’m Isha Mantri, and this site is where I take research that’s locked inside technical papers and work out what it means for people who don’t read technical papers. I studied economics at the University of Mumbai and moved to Melbourne eight months ago, coming into analytics without the coding or statistics grounding most people here start with. That’s shaped how I write, plainly and without assuming the reader already speaks the language.\nI’m a Master of Business Analytics student at Monash University, working mostly in R, Quarto and SQL. Alongside my studies I work part-time at McDonald’s, which keeps the week busy and the coffee free and a good practice in doing things quickly and getting them right.\nIf you want to get in touch about a post, a project, or something you think I’ve got wrong, the links below are the easiest way to reach me. I’m always interested in what people found confusing, that’s usually where the next post comes from."
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog Template",
+    "objectID": "posts/quarantine-delta/index.html",
+    "href": "posts/quarantine-delta/index.html",
+    "title": "Why vaccines didn’t reopen Australia’s borders",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!"
+    "text": "For most of 2020 and 2021, getting into Australia meant two weeks in a hotel room. Then the vaccines arrived, and a reasonable question followed: if everyone flying in is vaccinated, why are we still doing this?\nThe answer turned out to depend on a variant that showed up at roughly the same time. Delta spread about twice as easily as the version of the virus the quarantine system had been built for, and the vaccines that worked well against the original strain were noticeably worse at stopping Delta from passing between people.\nA team of researchers at the University of Melbourne and Monash built a simulation of a quarantine facility to work out how much that mattered. Their results answer two questions that are easy to confuse:\n\nWhy wasn’t vaccination enough to relax quarantine?\nDoes that mean vaccination made no difference at the border?"
+  },
+  {
+    "objectID": "posts/quarantine-delta/index.html#problem-description",
+    "href": "posts/quarantine-delta/index.html#problem-description",
+    "title": "Why vaccines didn’t reopen Australia’s borders",
+    "section": "",
+    "text": "For most of 2020 and 2021, getting into Australia meant two weeks in a hotel room. Then the vaccines arrived, and a reasonable question followed: if everyone flying in is vaccinated, why are we still doing this?\nThe answer turned out to depend on a variant that showed up at roughly the same time. Delta spread about twice as easily as the version of the virus the quarantine system had been built for, and the vaccines that worked well against the original strain were noticeably worse at stopping Delta from passing between people.\nA team of researchers at the University of Melbourne and Monash built a simulation of a quarantine facility to work out how much that mattered. Their results answer two questions that are easy to confuse:\n\nWhy wasn’t vaccination enough to relax quarantine?\nDoes that mean vaccination made no difference at the border?"
+  },
+  {
+    "objectID": "posts/quarantine-delta/index.html#analysis",
+    "href": "posts/quarantine-delta/index.html#analysis",
+    "title": "Why vaccines didn’t reopen Australia’s borders",
+    "section": "Analysis",
+    "text": "Analysis\n\nWhere the evidence comes from\nThe findings come from a 2022 study in Science Advances by researchers at the University of Melbourne and Monash University (Zachreson et al. 2022). They built a simulation of a quarantine facility holding 100 travellers, staffed by 20 workers, running the standard rules Australia used: a 14-day minimum stay, PCR tests on days 3 and 12, and isolation for anyone who tested positive. The simulation ran for the equivalent of a million days so that rare events, someone leaving quarantine while still infectious, happened often enough to count.\nTwo terms do most of the work in what follows. R0 is how many people one infected person passes the virus to, on average, in a population with no immunity. The original strain sat around 3; Delta was closer to 6. Vaccine efficacy against transmission is how much a vaccine cuts the chance of someone catching the virus and passing it on — not the same as protection against getting seriously ill, which stayed high throughout.\n\n\nQuestion 1: why wasn’t vaccination enough?\nThe researchers set a benchmark: the level of risk the quarantine system carried before vaccines existed, back when the virus was less transmissible. Then they asked how good a vaccine would need to be to hold risk at that same level as the virus got more infectious.\n\n\n\n\n\n\n\n\nFigure 1: Holding border risk steady required no vaccine under the original strain, but more than 60% efficacy against transmission under Delta.\n\n\n\n\n\nAs Figure 1 shows, under the original strain the system cleared that bar with no vaccination at all, that era was the benchmark. Under Delta, holding the same level of risk required a vaccine that cut transmission by more than 60%. Vaccines against Delta didn’t reliably reach that. The bar moved up and the vaccines moved down, at the same time.\nSo quarantine for vaccinated travellers under Delta had to look roughly like quarantine for unvaccinated travellers had looked before Delta. Vaccination wasn’t buying any relaxation.\n\n\nQuestion 2: so did vaccination make no difference?\nThis is where the first answer gets misread. Table 1 sets four scenarios against the same pre-vaccine benchmark.\n\n\n\n\nTable 1: Border risk under four scenarios, compared with the pre-vaccine benchmark.\n\n\n\n\n\n\n\n\n\n\nScenario\nRisk of a case reaching the community\n\n\n\n\nBefore vaccines (original strain)\nThe benchmark\n\n\nVaccinated, Alpha variant\n3% of benchmark\n\n\nUnvaccinated, Delta\n3x the benchmark\n\n\nVaccinated at 60%, Delta\nBack to benchmark\n\n\n\n\n\n\n\n\nTwo rows matter. An unvaccinated group under Delta carried three times the baseline risk, Delta alone made the border substantially more dangerous. And under the earlier Alpha variant, a 90% effective vaccine cut risk to 3% of baseline, which the researchers note would have let roughly 30 times more people fly in at the same level of risk.\nThat second number is the one that didn’t happen. The gain was real and it was large, and Delta took most of it back before it could be used. The paper puts it directly: had vaccines not arrived before Delta did, the quarantine system’s ability to prevent outbreaks would have deteriorated badly. Vaccination is what kept the system standing, not what let it relax."
+  },
+  {
+    "objectID": "posts/quarantine-delta/index.html#conclusion",
+    "href": "posts/quarantine-delta/index.html#conclusion",
+    "title": "Why vaccines didn’t reopen Australia’s borders",
+    "section": "Conclusion",
+    "text": "Conclusion\nBack to the two questions.\nWhy wasn’t vaccination enough to relax quarantine? Because Delta raised the bar at the same moment it lowered what vaccines could clear. Holding the border at its pre-vaccine level of risk needed a vaccine that cut transmission by more than 60%, and vaccines against Delta didn’t reliably manage that. Quarantine for vaccinated travellers had to stay roughly as strict as it had been for everyone.\nDid that mean vaccination made no difference? No, and this is the part that gets lost. Under the variant circulating before Delta, vaccination cut border risk to 3% of the benchmark, enough to have let around thirty times more people fly in at the same level of risk. The researchers’ own conclusion is that without vaccines, the quarantine system’s ability to prevent outbreaks would have deteriorated badly once Delta arrived (Zachreson et al. 2022).\nSo the honest answer to “why are we still doing this?” isn’t that the vaccines failed. It’s that they were holding the line rather than winning ground. The two weeks in a hotel room stayed because the virus had changed underneath a system that was, by then, only just keeping up.\nOne caveat worth carrying out of this. The study models transmission, not illness, it’s asking how likely the virus is to get out of quarantine and spread, not how sick it makes people. Vaccine protection against severe illness stayed high throughout, including against Delta. A vaccine can be worse at stopping spread and still be the reason someone doesn’t end up in hospital."
+  },
+  {
+    "objectID": "posts/quarantine-delta/index.html#references",
+    "href": "posts/quarantine-delta/index.html#references",
+    "title": "Why vaccines didn’t reopen Australia’s borders",
+    "section": "References",
+    "text": "References\n\n\nZachreson, Cameron, Freya M. Shearer, David J. Price, Michael J. Lydeamore, Jodie McVernon, James M. McCaw, and Nicholas Geard. 2022. “COVID-19 in Low-Tolerance Border Quarantine Systems: Impact of the Delta Variant of SARS-CoV-2.” Science Advances 8 (14): eabm3624. https://doi.org/10.1126/sciadv.abm3624."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "ETC5523 Blog Assessment",
     "section": "",
-    "text": "Welcome To My Blog Template\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJul 18, 2022\n\n\nEmi Tanaka\n\n\n\n\n\nNo matching items"
+    "text": "Why vaccines didn’t reopen Australia’s borders\n\n\n\npublic health\n\ndata\n\n\n\n\n\n\n\n\n\nOct 13, 2026\n\n\nIsha Mantri\n\n\n\n\n\nNo matching items"
   }
 ]
