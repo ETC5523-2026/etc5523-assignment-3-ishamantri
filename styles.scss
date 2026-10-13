@@ -1,20 +1,20 @@
 /*-- scss:defaults --*/
 
-$body-bg: #FDFBF7;
-$body-color: #2B2B2B;
-$link-color: #0B6E99;
-$navbar-bg: #1F3A4D;
-$navbar-fg: #FDFBF7;
+$body-bg: #F5F3EE;
+$body-color: #2E3238;
+$link-color: #3D6499;
+$navbar-bg: #23395B;
+$navbar-fg: #EAF0F7;
 $headings-font-weight: 600;
 
 /*-- scss:rules --*/
 
 h1, h2, h3, h4 {
-  color: #1F3A4D;
+  color: #23395B;
 }
 
 h2 {
-  border-bottom: 2px solid #E8DFD3;
+  border-bottom: 2px solid #CBD8E8;
   padding-bottom: 0.3rem;
   margin-top: 2rem;
 }
@@ -24,5 +24,5 @@ body {
 }
 
 .quarto-title-banner {
-  background-color: #1F3A4D;
+  background-color: #23395B;
 }
