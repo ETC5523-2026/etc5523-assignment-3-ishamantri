@@ -1,13 +1,22 @@
 ---
 title: "About"
-image: profile.jpg
+image: Isha.jpg
 about:
-  template: jolla
+  template: trestles
   links:
     - icon: github
-      text: Github
-      href: https://github.com/etc5523-2022
-
+      text: GitHub
+      href: https://github.com/ishamantri
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/isha-mantri-0a3339324
+    - icon: envelope
+      text: Email
+      href: mailto:iman0022@student.monash.edu
 ---
 
-This is a blog template for the ETC5523 Communicating with Data assessment at Monash University.
+I’m Isha Mantri, and this site is where I take research that’s locked inside technical papers and work out what it means for people who don’t read technical papers. I studied economics at the University of Mumbai and moved to Melbourne eight months ago, coming into analytics without the coding or statistics grounding most people here start with. That’s shaped how I write, plainly and without assuming the reader already speaks the language.
+
+I’m a Master of Business Analytics student at Monash University, working mostly in R, Quarto and SQL. Alongside my studies I work part-time at McDonald’s, which keeps the week busy and the coffee free and a good practice in doing things quickly and getting them right.
+
+If you want to get in touch about a post, a project, or something you think I’ve got wrong, the links below are the easiest way to reach me. I’m always interested in what people found confusing, that’s usually where the next post comes from.
